@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <title>Shadow Arena FPS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="loading">
+    <div class="loader"></div>
+    <h2>در حال آماده‌سازی میدان...</h2>
+  </div>
+
+  <div id="menu">
+    <div class="menu-box">
+      <div class="logo">SHADOW <span>ARENA</span></div>
+      <p>FPS سه‌بعدی</p>
+
+      <button id="startBtn">🎮 شروع بازی</button>
+
+      <div class="help">
+        <b>PC:</b> WASD حرکت • موس هدف‌گیری • کلیک شلیک • R ریلود • Space پرش
+        <br>
+        <b>Mobile:</b> کنترل‌های روی صفحه
+      </div>
+    </div>
+  </div>
+
+  <div id="hud">
+
+    <div class="topbar">
+
+      <div class="stat health">
+        ❤️ <span id="health">100</span>
+      </div>
+
+      <div class="stat score">
+        🏆 <span id="score">0</span>
+      </div>
+
+      <div class="stat wave">
+        WAVE <span id="wave">1</span>
+      </div>
+
+      <div class="stat ammo">
+        <span id="ammo">30</span>
+        /
+        <span id="reserve">120</span>
+        🔫
+      </div>
+
+    </div>
+
+    <div id="crosshair">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+
+    <div id="hitmarker">✕</div>
+
+    <div id="damage"></div>
+
+    <div id="notification"></div>
+
+    <div id="weapon-name">
+      ASSAULT RIFLE
+    </div>
+
+  </div>
+
+  <div id="mobileControls">
+
+    <div id="joystick">
+      <button data-key="KeyW">▲</button>
+      <button data-key="KeyA">◀</button>
+      <button data-key="KeyD">▶</button>
+      <button data-key="KeyS">▼</button>
+    </div>
+
+    <button id="mobileFire" class="circle fire">
+      🔥
+    </button>
+
+    <button id="mobileReload" class="circle reload">
+      ↻
+    </button>
+
+    <button id="mobileJump" class="circle jump">
+      ↑
+    </button>
+
+  </div>
+
+  <div id="gameOver">
+
+    <div class="gameover-box">
+
+      <div class="dead">YOU DIED</div>
+
+      <div>
+        امتیاز:
+        <strong id="finalScore">0</strong>
+      </div>
+
+      <button id="restartBtn">
+        🔄 دوباره
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="game.js"></script>
+
+</body>
+</html>
